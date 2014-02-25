@@ -1,0 +1,28 @@
+/*inserting new node......................................................................................
+    returning 1 for success
+    returning 0 for duplication(overwrite)
+    */
+    public int insertFlag=1;
+    public int insertNode(node ancestor,node child)
+    {
+        insertFlag=1;
+        insertNewNode(ancestor,child);
+        return insertFlag;
+    }   
+    
+    public node insertNewNode(node ancestor,node child)
+    {
+        if( ancestor == null ){
+            return child;
+        }
+        else if(ancestor.bookName.compareTo(child.bookName)>0)
+            ancestor.setLeft(insertNewNode(ancestor.left, child));
+        else if (ancestor.bookName.compareTo(child.bookName)<0)
+            ancestor.setRight(insertNewNode(ancestor.right, child));
+        else
+        {
+            insertFlag=0;
+            return child;  // on duplicate overwrites the node
+        }
+        return ancestor;
+    }

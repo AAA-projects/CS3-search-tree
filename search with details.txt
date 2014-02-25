@@ -1,0 +1,17 @@
+//Here there is the search function.First we get the ancestor node to compare
+//with the node we will use to search. 
+//For that here we use ">" or "<" signs.
+//If the word we search is situated before ancestor word as in the dictionary 
+//we get that as ">0" if that is situated after we get that as "<0".
+//If equal we get that as "=0" & print the word.
+
+
+public void searchNode(node ancestor,node searchNode)
+    {
+        if(ancestor.bookName.compareTo(searchNode.bookName)>0)
+            searchNode(ancestor.left, searchNode);
+        if (ancestor.bookName.compareTo(searchNode.bookName)<0)
+            searchNode(ancestor.right, searchNode);
+        if (ancestor.bookName.compareTo(searchNode.bookName)==0)
+            System.out.println(ancestor.bookName+"******"+ancestor.authName1);
+    }

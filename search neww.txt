@@ -1,0 +1,13 @@
+   public node searchNode(node ancestor,node searchNode)
+    {
+        if(ancestor==null)
+            return  null;
+        if(ancestor.bookName.compareTo(searchNode.bookName)>0)
+            ancestor= searchNode(ancestor.left, searchNode);
+        else if (ancestor.bookName.compareTo(searchNode.bookName)<0)
+            ancestor= searchNode(ancestor.right, searchNode);
+        else
+            return ancestor;
+
+        return  ancestor;
+    }
