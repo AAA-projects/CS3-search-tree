@@ -1,0 +1,21 @@
+    ArrayList<node> nodesList;                                          // starting keyword search
+    public ArrayList<node> keysearch(node root,String Kword)        
+    {
+        nodesList=new ArrayList<node>();                                //
+        nodesList=searchKeyword(root,Kword);
+        return nodesList;
+    }
+    
+   public ArrayList<node> searchKeyword(node root,String Kword)
+    {
+        if(root != null)                      //in-order traversal..........
+        {
+            searchKeyword(root.getLeft(),Kword);                    //recursion.................
+            if(root.bookName.indexOf(Kword,0)>=0)                   //check index of "kword"
+            nodesList.add(root);
+            searchKeyword(root.getRight(),Kword);                   //recursion.................
+        }
+        else
+            return nodesList;
+       return nodesList;
+    }
