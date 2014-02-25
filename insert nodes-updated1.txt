@@ -22,6 +22,13 @@
         else
         {
             insertFlag=0;
+
+
+            child.left=ancestor.left;     // setting children links..
+            child.right=ancestor.right;
+
+
+
             return child;  // on duplicate overwrites the node
         }
         return ancestor;
