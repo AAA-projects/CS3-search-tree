@@ -384,6 +384,8 @@ node root=new node();
     }// </editor-fold>//GEN-END:initComponents
 
 private void btnInsertMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInsertMouseClicked
+try{
+
 node newNode=new node(txtBnameT1.getText(),txtAname1T1.getText(),txtAname2T1.getText(),Integer.parseInt(txtIsbnT1.getText()));
 int flag= newNode.insertNode(root,newNode);
 if(flag==1){
@@ -394,7 +396,14 @@ txtAname2T1.setText("");
 txtIsbnT1.setText("");        
 }
 else lblStat.setText("record is updated.....................");
+
 }//GEN-LAST:event_btnInsertMouseClicked
+
+catch(Exception e){
+    lblStat.setText("ISBN should be numeric");
+    txtIsbnT1.setText("");
+}
+}
 
 private void btnSearchT2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSearchT2MouseClicked
 
@@ -415,13 +424,20 @@ searchNode= root.searchNode(root,searchNode);
 }//GEN-LAST:event_btnSearchT2MouseClicked
 else if(jComboBoxT2.getSelectedIndex()==1){
     ArrayList<node> nodes= root.keysearch(root,txtBnameT2.getText());
-    for(int i=0;i<nodes.size();i++)
-    model.addRow(new Object[]{nodes.get(i).bookName, nodes.get(i).authName1,nodes.get(i).authName2,nodes.get(i).isbn});
-}
+    if (nodes.size()!=0){
+        for(int i=0;i<nodes.size();i++)
+        model.addRow(new Object[]{nodes.get(i).bookName, nodes.get(i).authName1,nodes.get(i).authName2,nodes.get(i).isbn});
+    }
+    else{
+            lblStat.setText("search result not found.............");
+            model.addRow(new Object[]{"no record", "no record","no record","no record"});
+        }
+    }
 else if(jComboBoxT2.getSelectedIndex()==2){
     node result=root.searchISBN(root,txtBnameT2.getText());
     if(result!=null)
     model.addRow(new Object[]{result.bookName, result.authName1,result.authName2,result.isbn});
+    else lblStat.setText("search result not found.............");
 }
 }
 private void btnDelT3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDelT3MouseClicked

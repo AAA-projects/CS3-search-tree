@@ -1,4 +1,4 @@
-<?xml version="1.1" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
@@ -55,7 +55,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jTabbedPane1" pref="646" max="32767" attributes="0"/>
+                  <Component id="jTabbedPane1" max="32767" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -96,41 +96,39 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel2" min="-2" pref="175" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtBnameT1" min="-2" pref="234" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="1">
-                                  <Component id="jLabel3" min="-2" pref="175" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtAname1T1" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="1">
-                                  <Component id="jLabel4" min="-2" pref="175" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtAname2T1" max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="1">
-                                  <Component id="jLabel5" min="-2" pref="175" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtIsbnT1" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace pref="214" max="32767" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="426" max="32767" attributes="0"/>
                           <Component id="btnInsert" min="-2" pref="173" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="197" max="-2" attributes="0"/>
-                          <EmptySpace pref="430" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabel2" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtBnameT1" min="-2" pref="234" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="1">
+                                      <Component id="jLabel3" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtAname1T1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="1">
+                                      <Component id="jLabel4" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtAname2T1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="1">
+                                      <Component id="jLabel5" min="-2" pref="175" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtIsbnT1" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="jLabel1" alignment="0" min="-2" pref="197" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -141,22 +139,22 @@
                           <Component id="jLabel1" min="-2" pref="25" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtBnameT1" pref="27" max="32767" attributes="1"/>
+                              <Component id="txtBnameT1" max="32767" attributes="1"/>
                               <Component id="jLabel2" alignment="0" min="-2" pref="27" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtAname1T1" pref="27" max="32767" attributes="1"/>
+                              <Component id="txtAname1T1" max="32767" attributes="1"/>
                               <Component id="jLabel3" alignment="0" min="-2" pref="27" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtAname2T1" pref="27" max="32767" attributes="1"/>
+                              <Component id="txtAname2T1" max="32767" attributes="1"/>
                               <Component id="jLabel4" alignment="0" min="-2" pref="27" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtIsbnT1" pref="27" max="32767" attributes="1"/>
+                              <Component id="txtIsbnT1" max="32767" attributes="1"/>
                               <Component id="jLabel5" alignment="0" min="-2" pref="27" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -245,7 +243,6 @@
                                   <Component id="txtBnameT2" min="-2" pref="234" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="btnSearchT2" min="-2" pref="173" max="-2" attributes="0"/>
-                                  <EmptySpace pref="23" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
@@ -259,9 +256,9 @@
                           <Component id="jLabel6" min="-2" pref="25" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="btnSearchT2" alignment="0" pref="29" max="32767" attributes="1"/>
+                              <Component id="btnSearchT2" alignment="0" max="32767" attributes="1"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txtBnameT2" alignment="3" pref="27" max="32767" attributes="1"/>
+                                  <Component id="txtBnameT2" alignment="3" max="32767" attributes="1"/>
                                   <Component id="jComboBoxT2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -415,7 +412,7 @@
                           <Component id="jLabel14" min="-2" pref="25" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txtBnameT3" alignment="3" pref="27" max="32767" attributes="1"/>
+                              <Component id="txtBnameT3" alignment="3" max="32767" attributes="1"/>
                               <Component id="btnDelT3" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                               <Component id="jComboBoxT3" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                           </Group>
